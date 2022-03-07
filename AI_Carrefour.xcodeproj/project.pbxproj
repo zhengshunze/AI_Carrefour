@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF77A39F27D07F90004FB0DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF77A39E27D07F90004FB0DA /* AppDelegate.swift */; };
+		FF77A3A127D07F90004FB0DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF77A3A027D07F90004FB0DA /* SceneDelegate.swift */; };
+		FF77A3A327D07F90004FB0DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF77A3A227D07F90004FB0DA /* ViewController.swift */; };
+		FF77A3A627D07F90004FB0DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF77A3A427D07F90004FB0DA /* Main.storyboard */; };
+		FF77A3AB27D07F93004FB0DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF77A3A927D07F93004FB0DA /* LaunchScreen.storyboard */; };
+		FF77A3B327D08FC3004FB0DA /* poprecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF77A3B227D08FC3004FB0DA /* poprecording.swift */; };
+		FF79352227D12AF90010FE13 /* GIFsupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF79352127D12AF90010FE13 /* GIFsupport.swift */; };
+		FF79352427D12B990010FE13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF79352327D12B990010FE13 /* Assets.xcassets */; };
+		FF79352827D133C50010FE13 /* wave.gif in Resources */ = {isa = PBXBuildFile; fileRef = FF79352727D133C50010FE13 /* wave.gif */; };
+		FF79352A27D137880010FE13 /* wave2.gif in Resources */ = {isa = PBXBuildFile; fileRef = FF79352927D137880010FE13 /* wave2.gif */; };
+		FF79352C27D139200010FE13 /* wave3.gif in Resources */ = {isa = PBXBuildFile; fileRef = FF79352B27D139200010FE13 /* wave3.gif */; };
+		FF79352E27D139970010FE13 /* wave4.gif in Resources */ = {isa = PBXBuildFile; fileRef = FF79352D27D139970010FE13 /* wave4.gif */; };
+		FFC07E4927D465A3002C90AA /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC07E4827D465A3002C90AA /* ScanViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FF77A39B27D07F90004FB0DA /* AI_Carrefour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AI_Carrefour.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF77A39E27D07F90004FB0DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF77A3A027D07F90004FB0DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF77A3A227D07F90004FB0DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF77A3A527D07F90004FB0DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF77A3AA27D07F93004FB0DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF77A3AC27D07F93004FB0DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF77A3B227D08FC3004FB0DA /* poprecording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = poprecording.swift; sourceTree = "<group>"; };
+		FF79352127D12AF90010FE13 /* GIFsupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFsupport.swift; sourceTree = "<group>"; };
+		FF79352327D12B990010FE13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF79352727D133C50010FE13 /* wave.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wave.gif; sourceTree = "<group>"; };
+		FF79352927D137880010FE13 /* wave2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wave2.gif; sourceTree = "<group>"; };
+		FF79352B27D139200010FE13 /* wave3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wave3.gif; sourceTree = "<group>"; };
+		FF79352D27D139970010FE13 /* wave4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wave4.gif; sourceTree = "<group>"; };
+		FFC07E4827D465A3002C90AA /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF77A39827D07F90004FB0DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF77A39227D07F90004FB0DA = {
+			isa = PBXGroup;
+			children = (
+				FF77A39D27D07F90004FB0DA /* AI_Carrefour */,
+				FF77A39C27D07F90004FB0DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF77A39C27D07F90004FB0DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF77A39B27D07F90004FB0DA /* AI_Carrefour.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF77A39D27D07F90004FB0DA /* AI_Carrefour */ = {
+			isa = PBXGroup;
+			children = (
+				FF77A39E27D07F90004FB0DA /* AppDelegate.swift */,
+				FF77A3A027D07F90004FB0DA /* SceneDelegate.swift */,
+				FF77A3A227D07F90004FB0DA /* ViewController.swift */,
+				FF77A3A427D07F90004FB0DA /* Main.storyboard */,
+				FF79352127D12AF90010FE13 /* GIFsupport.swift */,
+				FF77A3B227D08FC3004FB0DA /* poprecording.swift */,
+				FF77A3A927D07F93004FB0DA /* LaunchScreen.storyboard */,
+				FFC07E4827D465A3002C90AA /* ScanViewController.swift */,
+				FF77A3AC27D07F93004FB0DA /* Info.plist */,
+				FF79352327D12B990010FE13 /* Assets.xcassets */,
+				FF79352727D133C50010FE13 /* wave.gif */,
+				FF79352927D137880010FE13 /* wave2.gif */,
+				FF79352B27D139200010FE13 /* wave3.gif */,
+				FF79352D27D139970010FE13 /* wave4.gif */,
+			);
+			path = AI_Carrefour;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF77A39A27D07F90004FB0DA /* AI_Carrefour */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF77A3AF27D07F93004FB0DA /* Build configuration list for PBXNativeTarget "AI_Carrefour" */;
+			buildPhases = (
+				FF77A39727D07F90004FB0DA /* Sources */,
+				FF77A39827D07F90004FB0DA /* Frameworks */,
+				FF77A39927D07F90004FB0DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AI_Carrefour;
+			productName = AI_Carrefour;
+			productReference = FF77A39B27D07F90004FB0DA /* AI_Carrefour.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF77A39327D07F90004FB0DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					FF77A39A27D07F90004FB0DA = {
+						CreatedOnToolsVersion = 13.2;
+					};
+				};
+			};
+			buildConfigurationList = FF77A39627D07F90004FB0DA /* Build configuration list for PBXProject "AI_Carrefour" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF77A39227D07F90004FB0DA;
+			productRefGroup = FF77A39C27D07F90004FB0DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF77A39A27D07F90004FB0DA /* AI_Carrefour */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF77A39927D07F90004FB0DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF79352827D133C50010FE13 /* wave.gif in Resources */,
+				FF77A3AB27D07F93004FB0DA /* LaunchScreen.storyboard in Resources */,
+				FF79352E27D139970010FE13 /* wave4.gif in Resources */,
+				FF79352C27D139200010FE13 /* wave3.gif in Resources */,
+				FF79352427D12B990010FE13 /* Assets.xcassets in Resources */,
+				FF79352A27D137880010FE13 /* wave2.gif in Resources */,
+				FF77A3A627D07F90004FB0DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF77A39727D07F90004FB0DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF77A3A327D07F90004FB0DA /* ViewController.swift in Sources */,
+				FF77A3B327D08FC3004FB0DA /* poprecording.swift in Sources */,
+				FF77A39F27D07F90004FB0DA /* AppDelegate.swift in Sources */,
+				FF77A3A127D07F90004FB0DA /* SceneDelegate.swift in Sources */,
+				FF79352227D12AF90010FE13 /* GIFsupport.swift in Sources */,
+				FFC07E4927D465A3002C90AA /* ScanViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF77A3A427D07F90004FB0DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF77A3A527D07F90004FB0DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF77A3A927D07F93004FB0DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF77A3AA27D07F93004FB0DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF77A3AD27D07F93004FB0DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF77A3AE27D07F93004FB0DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF77A3B027D07F93004FB0DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZK5C894KBC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AI_Carrefour/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "AI-Carrefour";
+				INFOPLIST_KEY_NSCameraUsageDescription = "需要打開相機來使用OCR商品成分辨識功能";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "需要打開位置來使用找尋商品功能";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "需要打開位置來使用找尋商品功能";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "需要打開位置來使用找尋商品功能";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "需要開啟麥克風權限！";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "需要打開相簿來使用OCR商品成分辨識功能";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.group5.AI-Carrefour.AI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF77A3B127D07F93004FB0DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZK5C894KBC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AI_Carrefour/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "AI-Carrefour";
+				INFOPLIST_KEY_NSCameraUsageDescription = "需要打開相機來使用OCR商品成分辨識功能";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "需要打開位置來使用找尋商品功能";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "需要打開位置來使用找尋商品功能";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "需要打開位置來使用找尋商品功能";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "需要開啟麥克風權限！";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "需要打開相簿來使用OCR商品成分辨識功能";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.group5.AI-Carrefour.AI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF77A39627D07F90004FB0DA /* Build configuration list for PBXProject "AI_Carrefour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF77A3AD27D07F93004FB0DA /* Debug */,
+				FF77A3AE27D07F93004FB0DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF77A3AF27D07F93004FB0DA /* Build configuration list for PBXNativeTarget "AI_Carrefour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF77A3B027D07F93004FB0DA /* Debug */,
+				FF77A3B127D07F93004FB0DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF77A39327D07F90004FB0DA /* Project object */;
+}
