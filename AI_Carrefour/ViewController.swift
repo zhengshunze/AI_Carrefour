@@ -7,16 +7,20 @@
 
 import UIKit
 import AVFoundation
+import googleapis
 
+let SAMPLE_RATE = 16000
 
 
 protocol controlaudio {
     func stopRecordAudio()
 }
 
-class ViewController: UIViewController,controlaudio {
-    
+class ViewController: UIViewController,controlaudio,AudioControllerDelegate {
 
+    var audioData: NSMutableData!
+    
+    @IBOutlet weak var text: UITextView!
     func stopRecordAudio()
     {
         guard audioRecorder != nil else {
@@ -24,6 +28,8 @@ class ViewController: UIViewController,controlaudio {
         }
         audioRecorder!.stop()
         print("停止錄音")
+        _ = AudioController.sharedInstance.stop()
+        SpeechRecognitionService.sharedInstance.stopStreaming()
     }
     	
     let session = AVAudioSession.sharedInstance()
@@ -43,7 +49,7 @@ class ViewController: UIViewController,controlaudio {
     override func viewDidLoad() {
 
         super.viewDidLoad()
-     
+        AudioController.sharedInstance.delegate = self
         let nc = NotificationCenter.default
         nc.addObserver(self, selector: #selector(appMovedToBackground), name: UIApplication.didEnterBackgroundNotification, object: nil)
         nc.addObserver(self, selector: #selector(appMovedToForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
@@ -164,9 +170,62 @@ class ViewController: UIViewController,controlaudio {
                 print("開始錄音")
             }
         
+        audioData = NSMutableData()
+        
+        _ = AudioController.sharedInstance.prepare(specifiedSampleRate: SAMPLE_RATE)
+        SpeechRecognitionService.sharedInstance.sampleRate = SAMPLE_RATE
+        _ = AudioController.sharedInstance.start()
+        
+        
         
     }
-    
+    func processSampleData(_ data: Data) {
+        audioData.append(data)
+        
+        // We recommend sending samples in 100ms chunks
+        let chunkSize: Int /* bytes/chunk */ = Int(
+            0.1 /* seconds/chunk */
+            * Double(SAMPLE_RATE) /* samples/second */
+            * 2 /* bytes/sample */)
+        
+        if audioData.length > chunkSize {
+            SpeechRecognitionService.sharedInstance.streamAudioData(
+                audioData,
+                completion: { [weak self] (response, error) in
+                    guard let strongSelf = self else {
+                        return
+                    }
+                    if let error = error {
+                        strongSelf.text.text = error.localizedDescription
+                    } else if let response = response {
+                        var finished = false
+                        for result in response.resultsArray {
+                            if let alternative = result as? StreamingRecognitionResult {
+                                for a in alternative.alternativesArray {
+                                    if let ai = a as? SpeechRecognitionAlternative {
+                                        if alternative.isFinal {
+                                            let someValue: String? = ai.transcript
+                                            if let newValue = someValue {
+                                                strongSelf.text.text = "\(newValue)"
+                                            }
+                                           
+                                            //print(ai.transcript)
+                                            finished = true
+                                        }
+                                    }
+                                }
+                                if finished {
+                                    strongSelf.stopRecordAudio()
+                                }
+                            }
+                        }
+                    }
+                })
+            self.audioData = NSMutableData()
+            
+        }
+        
+    }
     
 
     

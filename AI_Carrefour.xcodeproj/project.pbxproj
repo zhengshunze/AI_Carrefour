@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D24C6B4F545A4A956E4816CC /* Pods_AI_Carrefour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C886BC42E772FD8FD14FE083 /* Pods_AI_Carrefour.framework */; };
 		FF77A39F27D07F90004FB0DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF77A39E27D07F90004FB0DA /* AppDelegate.swift */; };
 		FF77A3A127D07F90004FB0DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF77A3A027D07F90004FB0DA /* SceneDelegate.swift */; };
 		FF77A3A327D07F90004FB0DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF77A3A227D07F90004FB0DA /* ViewController.swift */; };
@@ -20,9 +21,14 @@
 		FF79352C27D139200010FE13 /* wave3.gif in Resources */ = {isa = PBXBuildFile; fileRef = FF79352B27D139200010FE13 /* wave3.gif */; };
 		FF79352E27D139970010FE13 /* wave4.gif in Resources */ = {isa = PBXBuildFile; fileRef = FF79352D27D139970010FE13 /* wave4.gif */; };
 		FFC07E4927D465A3002C90AA /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC07E4827D465A3002C90AA /* ScanViewController.swift */; };
+		FFF6026127D5EFFD0076AB8E /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6025F27D5EFFD0076AB8E /* AudioController.swift */; };
+		FFF6026227D5EFFD0076AB8E /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6026027D5EFFD0076AB8E /* SpeechRecognitionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3ACA73352B1DC870BA73268C /* Pods-AI_Carrefour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AI_Carrefour.release.xcconfig"; path = "Target Support Files/Pods-AI_Carrefour/Pods-AI_Carrefour.release.xcconfig"; sourceTree = "<group>"; };
+		906DCB29A7BEE944CACAA5B7 /* Pods-AI_Carrefour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AI_Carrefour.debug.xcconfig"; path = "Target Support Files/Pods-AI_Carrefour/Pods-AI_Carrefour.debug.xcconfig"; sourceTree = "<group>"; };
+		C886BC42E772FD8FD14FE083 /* Pods_AI_Carrefour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AI_Carrefour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF77A39B27D07F90004FB0DA /* AI_Carrefour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AI_Carrefour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF77A39E27D07F90004FB0DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF77A3A027D07F90004FB0DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +44,9 @@
 		FF79352B27D139200010FE13 /* wave3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wave3.gif; sourceTree = "<group>"; };
 		FF79352D27D139970010FE13 /* wave4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wave4.gif; sourceTree = "<group>"; };
 		FFC07E4827D465A3002C90AA /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		FFF6025F27D5EFFD0076AB8E /* AudioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
+		FFF6026027D5EFFD0076AB8E /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
+		FFF6026327D5F2480076AB8E /* Speech-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Speech-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +54,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D24C6B4F545A4A956E4816CC /* Pods_AI_Carrefour.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		235659CF4EBDB5719A6AE232 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				906DCB29A7BEE944CACAA5B7 /* Pods-AI_Carrefour.debug.xcconfig */,
+				3ACA73352B1DC870BA73268C /* Pods-AI_Carrefour.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A19FAA06D1EE2F74BE9EA700 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C886BC42E772FD8FD14FE083 /* Pods_AI_Carrefour.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF77A39227D07F90004FB0DA = {
 			isa = PBXGroup;
 			children = (
 				FF77A39D27D07F90004FB0DA /* AI_Carrefour */,
 				FF77A39C27D07F90004FB0DA /* Products */,
+				235659CF4EBDB5719A6AE232 /* Pods */,
+				A19FAA06D1EE2F74BE9EA700 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +113,9 @@
 				FF79352927D137880010FE13 /* wave2.gif */,
 				FF79352B27D139200010FE13 /* wave3.gif */,
 				FF79352D27D139970010FE13 /* wave4.gif */,
+				FFF6025F27D5EFFD0076AB8E /* AudioController.swift */,
+				FFF6026027D5EFFD0076AB8E /* SpeechRecognitionService.swift */,
+				FFF6026327D5F2480076AB8E /* Speech-Bridging-Header.h */,
 			);
 			path = AI_Carrefour;
 			sourceTree = "<group>";
@@ -95,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF77A3AF27D07F93004FB0DA /* Build configuration list for PBXNativeTarget "AI_Carrefour" */;
 			buildPhases = (
+				14F013FC4DE31E93DD274DB9 /* [CP] Check Pods Manifest.lock */,
 				FF77A39727D07F90004FB0DA /* Sources */,
 				FF77A39827D07F90004FB0DA /* Frameworks */,
 				FF77A39927D07F90004FB0DA /* Resources */,
+				B71E074A6DB989E82B4F8CBE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,13 +192,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14F013FC4DE31E93DD274DB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AI_Carrefour-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B71E074A6DB989E82B4F8CBE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AI_Carrefour/Pods-AI_Carrefour-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AI_Carrefour/Pods-AI_Carrefour-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AI_Carrefour/Pods-AI_Carrefour-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FF77A39727D07F90004FB0DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFF6026127D5EFFD0076AB8E /* AudioController.swift in Sources */,
 				FF77A3A327D07F90004FB0DA /* ViewController.swift in Sources */,
 				FF77A3B327D08FC3004FB0DA /* poprecording.swift in Sources */,
+				FFF6026227D5EFFD0076AB8E /* SpeechRecognitionService.swift in Sources */,
 				FF77A39F27D07F90004FB0DA /* AppDelegate.swift in Sources */,
 				FF77A3A127D07F90004FB0DA /* SceneDelegate.swift in Sources */,
 				FF79352227D12AF90010FE13 /* GIFsupport.swift in Sources */,
@@ -312,6 +390,7 @@
 		};
 		FF77A3B027D07F93004FB0DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 906DCB29A7BEE944CACAA5B7 /* Pods-AI_Carrefour.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -350,6 +429,7 @@
 		};
 		FF77A3B127D07F93004FB0DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ACA73352B1DC870BA73268C /* Pods-AI_Carrefour.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
