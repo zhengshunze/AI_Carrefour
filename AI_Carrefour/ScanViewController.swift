@@ -25,6 +25,7 @@ class ScanViewController: UIViewController,UIImagePickerControllerDelegate, UINa
     @IBAction func test(_ sender: Any) {
       
         getPhoto()
+        //
         
     }
     
@@ -35,6 +36,9 @@ class ScanViewController: UIViewController,UIImagePickerControllerDelegate, UINa
         picker.delegate = self
         present(picker, animated: true, completion: nil)
     }
+    
+    
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo Info:[UIImagePickerController.InfoKey: Any]) {
         dismiss(animated: true, completion: nil)
 
@@ -70,5 +74,9 @@ class ScanViewController: UIViewController,UIImagePickerControllerDelegate, UINa
         picker.delegate = self
         present(picker, animated: true, completion: nil)
     }
+    
+    
+    
+    
     
 }

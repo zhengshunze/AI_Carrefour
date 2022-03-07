@@ -20,7 +20,7 @@ class ViewController: UIViewController,controlaudio,AudioControllerDelegate {
 
     var audioData: NSMutableData!
     
-    @IBOutlet weak var text: UITextView!
+ 
     func stopRecordAudio()
     {
         guard audioRecorder != nil else {
@@ -45,10 +45,12 @@ class ViewController: UIViewController,controlaudio,AudioControllerDelegate {
     @IBOutlet weak var btnscan: UIButton!
     
     
+    @IBOutlet weak var lbresultwords: UILabel!
+    
     
     override func viewDidLoad() {
-
         super.viewDidLoad()
+        
         AudioController.sharedInstance.delegate = self
         let nc = NotificationCenter.default
         nc.addObserver(self, selector: #selector(appMovedToBackground), name: UIApplication.didEnterBackgroundNotification, object: nil)
@@ -196,7 +198,7 @@ class ViewController: UIViewController,controlaudio,AudioControllerDelegate {
                         return
                     }
                     if let error = error {
-                        strongSelf.text.text = error.localizedDescription
+                        strongSelf.lbresultwords.text = error.localizedDescription
                     } else if let response = response {
                         var finished = false
                         for result in response.resultsArray {
@@ -206,7 +208,7 @@ class ViewController: UIViewController,controlaudio,AudioControllerDelegate {
                                         if alternative.isFinal {
                                             let someValue: String? = ai.transcript
                                             if let newValue = someValue {
-                                                strongSelf.text.text = "\(newValue)"
+                                                strongSelf.lbresultwords.text = "\(newValue)"
                                             }
                                            
                                             //print(ai.transcript)

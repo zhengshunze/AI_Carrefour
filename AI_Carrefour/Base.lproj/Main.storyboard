@@ -154,40 +154,45 @@
                                 <rect key="frame" x="0.0" y="49" width="414" height="808"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KYh-hj-ezT">
-                                <rect key="frame" x="87" y="97" width="240" height="128"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfO-G6-xmi">
+                                <rect key="frame" x="173" y="737" width="71" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="kbF-mb-w0Q"/>
+                                    <constraint firstAttribute="width" constant="71" id="lcP-gd-iQx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.0" green="0.30588235294117649" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RfO-G6-xmi" secondAttribute="trailing" constant="170" id="6YM-eJ-sDP"/>
                             <constraint firstItem="PVr-sr-QzT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="5" id="FUc-V5-wJW"/>
                             <constraint firstItem="PVr-sr-QzT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HMO-s8-6ou"/>
                             <constraint firstItem="W9x-Rr-EuD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-90" id="R35-EY-2cS"/>
+                            <constraint firstItem="RfO-G6-xmi" firstAttribute="top" secondItem="q0C-P2-0oG" secondAttribute="bottom" constant="62" id="a22-CQ-Ebg"/>
                             <constraint firstItem="W9x-Rr-EuD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cgb-70-N9v"/>
                             <constraint firstItem="q0C-P2-0oG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="132" id="epp-KJ-dUp"/>
                             <constraint firstItem="q0C-P2-0oG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g48-V4-3E9"/>
-                            <constraint firstItem="KYh-hj-ezT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nUI-wa-hzZ"/>
                             <constraint firstItem="PVr-sr-QzT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pwu-PL-FhF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PVr-sr-QzT" secondAttribute="trailing" id="sA4-ev-dP6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RfO-G6-xmi" secondAttribute="bottom" constant="89" id="sNA-hp-zmF"/>
                             <constraint firstItem="PVr-sr-QzT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tnW-j3-hSm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PVr-sr-QzT" secondAttribute="bottom" constant="5" id="yPy-t0-5LS"/>
+                            <constraint firstItem="RfO-G6-xmi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="173" id="yfQ-AV-8vJ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="btnassistant" destination="q0C-P2-0oG" id="Nxs-ON-EFO"/>
                         <outlet property="btnscan" destination="W9x-Rr-EuD" id="46S-fH-APK"/>
-                        <outlet property="text" destination="KYh-hj-ezT" id="8sX-c0-4gk"/>
+                        <outlet property="lbresultwords" destination="RfO-G6-xmi" id="PaN-Uf-uDn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-906" y="-7"/>
+            <point key="canvasLocation" x="-907.24637681159425" y="-7.3660714285714279"/>
         </scene>
         <!--Poprecording-->
         <scene sceneID="oPL-hi-NV1">
@@ -257,9 +262,6 @@
     <resources>
         <image name="index" width="375" height="812"/>
         <image name="scan " width="375" height="812"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
