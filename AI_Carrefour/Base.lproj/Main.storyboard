@@ -11,7 +11,7 @@
         <!--Scan View Controller-->
         <scene sceneID="Ods-AZ-6pz">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="IGG-DM-xYc" customClass="ScanViewController" customModule="AI_Carrefour" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="IGG-DM-xYc" customClass="ScanViewController" customModule="AI_Carrefour" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ufg-E8-Pkq" userLabel="Scan" customClass="Sac">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
