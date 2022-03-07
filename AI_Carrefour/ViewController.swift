@@ -37,6 +37,9 @@ class ViewController: UIViewController,controlaudio {
     @IBOutlet weak var btnassistant: UIButton!
     
     @IBOutlet weak var btnscan: UIButton!
+    
+    
+    
     override func viewDidLoad() {
 
         super.viewDidLoad()
