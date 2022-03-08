@@ -30,6 +30,7 @@ class ViewController: UIViewController,controlaudio,AudioControllerDelegate {
         print("停止錄音")
         _ = AudioController.sharedInstance.stop()
         SpeechRecognitionService.sharedInstance.stopStreaming()
+       
     }
     	
     let session = AVAudioSession.sharedInstance()
@@ -50,7 +51,10 @@ class ViewController: UIViewController,controlaudio,AudioControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        lbresultwords.sizeToFit()
+        lbresultwords.frame = CGRect(x: 5, y: 20, width: lbresultwords.frame.width, height:lbresultwords.frame.height)
+
+
         AudioController.sharedInstance.delegate = self
         let nc = NotificationCenter.default
         nc.addObserver(self, selector: #selector(appMovedToBackground), name: UIApplication.didEnterBackgroundNotification, object: nil)
@@ -65,8 +69,7 @@ class ViewController: UIViewController,controlaudio,AudioControllerDelegate {
         //let audioSettings = [
         //    AVFormatIDKey: NSNumber(value: kAudioFormatMPEG4AAC)
         // ]
-        
-    
+
             if (session.responds(to: #selector(AVAudioSession.requestRecordPermission(_:)))) {
                 AVAudioSession.sharedInstance().requestRecordPermission({ [self](granted: Bool)-> Void in
                        if granted {
@@ -88,9 +91,6 @@ class ViewController: UIViewController,controlaudio,AudioControllerDelegate {
                        }
                    })
                }
-        
-        
-      
     }
     @objc func appMovedToBackground() {
         print("yap")

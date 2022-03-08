@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D24C6B4F545A4A956E4816CC /* Pods_AI_Carrefour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C886BC42E772FD8FD14FE083 /* Pods_AI_Carrefour.framework */; };
+		FF770CAD27D6EA7D0083B809 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF770CAC27D6EA7D0083B809 /* ChatViewController.swift */; };
 		FF77A39F27D07F90004FB0DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF77A39E27D07F90004FB0DA /* AppDelegate.swift */; };
 		FF77A3A127D07F90004FB0DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF77A3A027D07F90004FB0DA /* SceneDelegate.swift */; };
 		FF77A3A327D07F90004FB0DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF77A3A227D07F90004FB0DA /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 		3ACA73352B1DC870BA73268C /* Pods-AI_Carrefour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AI_Carrefour.release.xcconfig"; path = "Target Support Files/Pods-AI_Carrefour/Pods-AI_Carrefour.release.xcconfig"; sourceTree = "<group>"; };
 		906DCB29A7BEE944CACAA5B7 /* Pods-AI_Carrefour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AI_Carrefour.debug.xcconfig"; path = "Target Support Files/Pods-AI_Carrefour/Pods-AI_Carrefour.debug.xcconfig"; sourceTree = "<group>"; };
 		C886BC42E772FD8FD14FE083 /* Pods_AI_Carrefour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AI_Carrefour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF770CAC27D6EA7D0083B809 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		FF77A39B27D07F90004FB0DA /* AI_Carrefour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AI_Carrefour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF77A39E27D07F90004FB0DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF77A3A027D07F90004FB0DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				FF77A3A427D07F90004FB0DA /* Main.storyboard */,
 				FF79352127D12AF90010FE13 /* GIFsupport.swift */,
 				FF77A3B227D08FC3004FB0DA /* poprecording.swift */,
+				FF770CAC27D6EA7D0083B809 /* ChatViewController.swift */,
 				FF77A3A927D07F93004FB0DA /* LaunchScreen.storyboard */,
 				FFC07E4827D465A3002C90AA /* ScanViewController.swift */,
 				FF77A3AC27D07F93004FB0DA /* Info.plist */,
@@ -246,6 +249,7 @@
 				FF77A39F27D07F90004FB0DA /* AppDelegate.swift in Sources */,
 				FF77A3A127D07F90004FB0DA /* SceneDelegate.swift in Sources */,
 				FF79352227D12AF90010FE13 /* GIFsupport.swift in Sources */,
+				FF770CAD27D6EA7D0083B809 /* ChatViewController.swift in Sources */,
 				FFC07E4927D465A3002C90AA /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,12 +404,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AI_Carrefour/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "AI-Carrefour";
-				INFOPLIST_KEY_NSCameraUsageDescription = "需要打開相機來使用OCR商品成分辨識功能";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "需要打開位置來使用找尋商品功能";
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "需要打開位置來使用找尋商品功能";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "需要打開位置來使用找尋商品功能";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "需要開啟麥克風權限！";
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "需要打開相簿來使用OCR商品成分辨識功能";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -439,12 +440,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AI_Carrefour/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "AI-Carrefour";
-				INFOPLIST_KEY_NSCameraUsageDescription = "需要打開相機來使用OCR商品成分辨識功能";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "需要打開位置來使用找尋商品功能";
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "需要打開位置來使用找尋商品功能";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "需要打開位置來使用找尋商品功能";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "需要開啟麥克風權限！";
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "需要打開相簿來使用OCR商品成分辨識功能";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
