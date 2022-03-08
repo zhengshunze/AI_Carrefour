@@ -16,10 +16,10 @@ class ScanViewController: UIViewController,UIImagePickerControllerDelegate, UINa
     @IBOutlet weak var img: UIImageView!
     override func viewDidLoad() {
       
-        imagePicker.delegate = self
-        imagePicker.allowsEditing = true
+       
         super.viewDidLoad()
-      
+        imagePicker.allowsEditing = false
+        imagePicker.delegate = self
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "test", style: .plain, target: self,action: #selector(backViewBtnFnc))
 
@@ -30,7 +30,10 @@ class ScanViewController: UIViewController,UIImagePickerControllerDelegate, UINa
         let photoAuthorizationStatus = PHPhotoLibrary.authorizationStatus()
         switch photoAuthorizationStatus {
         case .authorized:
-            present(imagePicker, animated: true, completion: nil)
+                    imagePicker.sourceType = UIImagePickerController.SourceType.photoLibrary
+                    imagePicker.allowsEditing = true
+                    imagePicker.delegate = self
+                    present(imagePicker, animated: true, completion: nil)
             print("Access is granted by user")
         case .notDetermined:
             PHPhotoLibrary.requestAuthorization({
@@ -98,9 +101,10 @@ class ScanViewController: UIViewController,UIImagePickerControllerDelegate, UINa
     }
 
     func getPhoto(){
-        
-        self.imagePicker.sourceType = .camera
-        self.present(self.imagePicker, animated: true, completion: nil)
+                imagePicker.sourceType = UIImagePickerController.SourceType.camera
+                imagePicker.allowsEditing = true
+                imagePicker.delegate = self
+               present(imagePicker, animated: true, completion: nil)
           }
 
 
@@ -109,6 +113,8 @@ class ScanViewController: UIViewController,UIImagePickerControllerDelegate, UINa
            img.image = pickedImage
            dismiss(animated: true, completion: nil)
        }
+    
+
     
     
 //    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo Info:[UIImagePickerController.InfoKey: Any]) {
@@ -142,6 +148,7 @@ class ScanViewController: UIViewController,UIImagePickerControllerDelegate, UINa
 
     @IBAction func addphoto(_ sender: Any) {
         checkPermission()
+       
     }
     
     
