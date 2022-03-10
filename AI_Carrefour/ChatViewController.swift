@@ -8,7 +8,6 @@
 import UIKit
 
 
-
 class ChatViewController: UIViewController {
     
     
@@ -20,12 +19,12 @@ class ChatViewController: UIViewController {
       	
         //        userinfo.contentInset = UIEdgeInsets(top: 12, left: 5, bottom: 12, right: 5)
         
-        userinfo.isEditable = false
-        userinfo.isUserInteractionEnabled = false
-        userinfo.layer.cornerRadius = 20
-        userinfo.clipsToBounds = true
-        
-        userinfo.text = "您搜尋的商品為： "
+//        userinfo.isEditable = false
+//        userinfo.isUserInteractionEnabled = false
+//        userinfo.layer.cornerRadius = 10
+//        userinfo.clipsToBounds = true
+//
+//        userinfo.text = ""
         
     }
     @IBOutlet weak var buttonsStack: UIStackView!

@@ -31,6 +31,7 @@ class poprecording: UIViewController {
     
     @IBAction func closepopup(_ sender: Any) {
         delegate?.stopRecordAudio()
+        
         let parentVC = presentingViewController
         dismiss(animated: true) {
             let vc = self.storyboard!.instantiateViewController (withIdentifier: "popchat")
