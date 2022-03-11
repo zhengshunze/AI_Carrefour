@@ -19,7 +19,7 @@ protocol controlaudio {
 class ViewController: UIViewController,controlaudio,AudioControllerDelegate {
 
     var audioData: NSMutableData!
-    
+
  
     func stopRecordAudio()
     {
@@ -30,6 +30,7 @@ class ViewController: UIViewController,controlaudio,AudioControllerDelegate {
         print("停止錄音")
         _ = AudioController.sharedInstance.stop()
         SpeechRecognitionService.sharedInstance.stopStreaming()
+        self.btnserach.isHidden = false
        
     }
     	
@@ -48,13 +49,15 @@ class ViewController: UIViewController,controlaudio,AudioControllerDelegate {
     
     @IBOutlet weak var lbresultwords: UILabel!
     
-    
+    @IBOutlet weak var btnserach: UIButton!
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
-        lbresultwords.sizeToFit()
-        lbresultwords.frame = CGRect(x: 5, y: 20, width: lbresultwords.frame.width, height:lbresultwords.frame.height)
-
-
+        self.btnserach.isHidden = true
+        // 添加搜尋圖片
+//        let img = UIImage(named: "icon")
+//        btnserach.setImage(img?.withRenderingMode(.alwaysOriginal), for: .normal)
+        
         AudioController.sharedInstance.delegate = self
         let nc = NotificationCenter.default
         nc.addObserver(self, selector: #selector(appMovedToBackground), name: UIApplication.didEnterBackgroundNotification, object: nil)
@@ -168,7 +171,8 @@ class ViewController: UIViewController,controlaudio,AudioControllerDelegate {
                   }
       
         if self.audioRecorder!.record() {
-               
+           
+
                 print("開始錄音")
             }
         
@@ -229,23 +233,37 @@ class ViewController: UIViewController,controlaudio,AudioControllerDelegate {
         
     }
     
-
     
+    @IBAction func gotoChat(_ sender: Any) {
        
-        
-                 
-    
-    
+//        if let controller = storyboard?.instantiateViewController(withIdentifier: "popview") as? ChatViewController {
+//            if (lbresultwords.text != ""){
+//
+//            present(controller, animated: true, completion: nil)
+//                controller.labeltext="feregeregrgreg"
+//            }
+//        }
 
+        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "popview") as? ChatViewController {
+            if (lbresultwords.text != ""){
+                viewController.labeltext = lbresultwords.text!
+                self.present(viewController, animated: true, completion: nil)
+            }
+        }
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
            if let destination = segue.destination as? poprecording	 {
                destination.delegate = self
            }
-       }
-  
+//        if (lbresultwords.text != ""){
+//            if let destination = segue.destination as? ChatViewController     {
+//                destination.labeltext = lbresultwords.text!
+//            }
+       
+    }
 
-    
-      
     
 }
 

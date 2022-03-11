@@ -8,29 +8,61 @@
 import UIKit
 
 
-class ChatViewController: UIViewController {
+class ChatViewController: UIViewController, UITextViewDelegate {
     
     
+    @IBOutlet weak var textView: UITextView!
+  
+    @IBOutlet weak var label: UILabel!
+    var labeltext = String()
     
-    @IBOutlet weak var userinfo: UITextView!
+    
+    @IBOutlet weak var item1: UIImageView!
+    @IBOutlet weak var item2: UIImageView!
+    @IBOutlet weak var item3: UIImageView!
+    @IBOutlet weak var item4: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      	
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+        item1.isUserInteractionEnabled = true
+        item1.addGestureRecognizer(tapGestureRecognizer)
+        
+        textView.text = labeltext
+     
         //        userinfo.contentInset = UIEdgeInsets(top: 12, left: 5, bottom: 12, right: 5)
         
 //        userinfo.isEditable = false
 //        userinfo.isUserInteractionEnabled = false
-//        userinfo.layer.cornerRadius = 10
-//        userinfo.clipsToBounds = true
-//
-//        userinfo.text = ""
+        textView.layer.cornerRadius = 10
+        textView.clipsToBounds = true
+
+        textView.font = UIFont.preferredFont(forTextStyle: .title3)
+        textView.delegate = self
+        textView.isScrollEnabled = false
+         
         
     }
+    
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+       
+       
+        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "mapview") as? MapViewController {
+            self.present(viewController, animated: true, completion: nil)
+            
+        
+        }
+    }
+    
+    
+   
+    
     @IBOutlet weak var buttonsStack: UIStackView!
 
 
-
+    @IBOutlet weak var textview: UITextView!
+    
 
     
     var i = 0
@@ -60,5 +92,16 @@ class ChatViewController: UIViewController {
     
     @IBAction func goback(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        let size = CGSize(width: view.frame.width, height: .infinity)
+        let estimatedSize = textView.sizeThatFits(size)
+        
+        textView.constraints.forEach { (constraint) in
+            if constraint.firstAttribute == .height {
+                constraint.constant = estimatedSize.height
+            }
+        }
     }
 }

@@ -17,9 +17,13 @@ class poprecording: UIViewController {
     @IBOutlet weak var recordingGIF: UIImageView!
     
     @IBOutlet weak var popupView: UIView!
+    
+    @IBOutlet weak var label: UILabel!
+    
+    var mytext = String()
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        label.text = mytext
         popupView.layer.cornerRadius =	 10
         popupView.layer.masksToBounds = true
 
@@ -29,14 +33,35 @@ class poprecording: UIViewController {
 
     }
     
+    
+    
+    @IBAction func test(_ sender: Any) {
+       
+            
+       
+    }
+    
     @IBAction func closepopup(_ sender: Any) {
         delegate?.stopRecordAudio()
         
-        let parentVC = presentingViewController
+        //let parentVC = presentingViewController
         dismiss(animated: true) {
-            let vc = self.storyboard!.instantiateViewController (withIdentifier: "popchat")
-            parentVC?.present(vc, animated: true, completion: nil)
-        }
-    }
+//            let vc = self.storyboard!.instantiateViewController (withIdentifier: "popchat")
+//            let ChatViewController = self.storyboard?.instantiateViewController(withIdentifier: "popchat") as! ChatViewController
+//            ChatViewController.text = "HI!"
+       // parentVC?.present(vc, animated: true, completion: nil)
         
-}
+           }
+        }
+    
+    @IBAction func go(_ sender: Any) {
+      
+    
+    }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let destination = segue.destination as? ChatViewController {
+//            destination.mytext2 = label.text!
+//
+//        }
+    }

@@ -21,6 +21,7 @@
 		FF79352A27D137880010FE13 /* wave2.gif in Resources */ = {isa = PBXBuildFile; fileRef = FF79352927D137880010FE13 /* wave2.gif */; };
 		FF79352C27D139200010FE13 /* wave3.gif in Resources */ = {isa = PBXBuildFile; fileRef = FF79352B27D139200010FE13 /* wave3.gif */; };
 		FF79352E27D139970010FE13 /* wave4.gif in Resources */ = {isa = PBXBuildFile; fileRef = FF79352D27D139970010FE13 /* wave4.gif */; };
+		FFB15F4F27DB3E0300AF9A8A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB15F4E27DB3E0300AF9A8A /* MapViewController.swift */; };
 		FFC07E4927D465A3002C90AA /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC07E4827D465A3002C90AA /* ScanViewController.swift */; };
 		FFF6026127D5EFFD0076AB8E /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6025F27D5EFFD0076AB8E /* AudioController.swift */; };
 		FFF6026227D5EFFD0076AB8E /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6026027D5EFFD0076AB8E /* SpeechRecognitionService.swift */; };
@@ -45,6 +46,7 @@
 		FF79352927D137880010FE13 /* wave2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wave2.gif; sourceTree = "<group>"; };
 		FF79352B27D139200010FE13 /* wave3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wave3.gif; sourceTree = "<group>"; };
 		FF79352D27D139970010FE13 /* wave4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wave4.gif; sourceTree = "<group>"; };
+		FFB15F4E27DB3E0300AF9A8A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FFC07E4827D465A3002C90AA /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		FFF6025F27D5EFFD0076AB8E /* AudioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
 		FFF6026027D5EFFD0076AB8E /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		FF77A39227D07F90004FB0DA = {
 			isa = PBXGroup;
 			children = (
+				FFB15F4E27DB3E0300AF9A8A /* MapViewController.swift */,
 				FF77A39D27D07F90004FB0DA /* AI_Carrefour */,
 				FF77A39C27D07F90004FB0DA /* Products */,
 				235659CF4EBDB5719A6AE232 /* Pods */,
@@ -245,6 +248,7 @@
 				FFF6026127D5EFFD0076AB8E /* AudioController.swift in Sources */,
 				FF77A3A327D07F90004FB0DA /* ViewController.swift in Sources */,
 				FF77A3B327D08FC3004FB0DA /* poprecording.swift in Sources */,
+				FFB15F4F27DB3E0300AF9A8A /* MapViewController.swift in Sources */,
 				FFF6026227D5EFFD0076AB8E /* SpeechRecognitionService.swift in Sources */,
 				FF77A39F27D07F90004FB0DA /* AppDelegate.swift in Sources */,
 				FF77A3A127D07F90004FB0DA /* SceneDelegate.swift in Sources */,
