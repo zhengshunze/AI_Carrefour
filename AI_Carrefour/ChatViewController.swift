@@ -36,23 +36,37 @@ class ChatViewController: UIViewController, UITextViewDelegate {
 //        userinfo.isUserInteractionEnabled = false
         textView.layer.cornerRadius = 10
         textView.clipsToBounds = true
-
+        
         textView.font = UIFont.preferredFont(forTextStyle: .title3)
         textView.delegate = self
         textView.isScrollEnabled = false
-         
+        
         
     }
     
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
     {
-       
-       
-        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "mapview") as? MapViewController {
-            self.present(viewController, animated: true, completion: nil)
-            
         
-        }
+        let tappedImage = tapGestureRecognizer.view as! UIImageView
+        
+        tappedImage.isUserInteractionEnabled = true
+        
+        self.present(MapViewController(), animated: true)
+        
+        
+        
+        
+//
+//        if let controller = storyboard?.instantiateViewController(withIdentifier: "mapview") as? MapViewController {
+//            present(controller, animated: true, completion: nil)}
+               
+
+        
+//       
+//        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "mapview") as? MapViewController {
+//            self.present(viewController, animated: true, completion: nil)
+//
+//        }
     }
     
     

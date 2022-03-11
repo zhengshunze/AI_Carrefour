@@ -85,7 +85,6 @@
 		FF77A39227D07F90004FB0DA = {
 			isa = PBXGroup;
 			children = (
-				FFB15F4E27DB3E0300AF9A8A /* MapViewController.swift */,
 				FF77A39D27D07F90004FB0DA /* AI_Carrefour */,
 				FF77A39C27D07F90004FB0DA /* Products */,
 				235659CF4EBDB5719A6AE232 /* Pods */,
@@ -104,6 +103,7 @@
 		FF77A39D27D07F90004FB0DA /* AI_Carrefour */ = {
 			isa = PBXGroup;
 			children = (
+				FFB15F4E27DB3E0300AF9A8A /* MapViewController.swift */,
 				FF77A39E27D07F90004FB0DA /* AppDelegate.swift */,
 				FF77A3A027D07F90004FB0DA /* SceneDelegate.swift */,
 				FF77A3A227D07F90004FB0DA /* ViewController.swift */,
